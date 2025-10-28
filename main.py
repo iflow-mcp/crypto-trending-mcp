@@ -73,5 +73,9 @@ The following Markdown document contains the CoinGecko trending cryptocurrencies
 2. Parse the table into JSON, where each coin is an object with fields: rank, name, symbol, price, change_1h, change_24h, change_7d, volume_24h, market_cap.
 """.format(md_doc=doc)
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the MCP server."""
     mcp.run()
+
+if __name__ == "__main__":
+    main()
