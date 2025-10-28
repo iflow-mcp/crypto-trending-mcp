@@ -1,5 +1,5 @@
 [project]
-name = "crypto-trending-mcp"
+name = "iflow-mcp_crypto-trending-mcp"
 version = "0.1.0"
 description = "An MCP server that tracks and monitors the latest trending tokens on CoinGecko."
 readme = "README.md"
@@ -9,3 +9,10 @@ dependencies = [
     "mcp[cli]>=1.6.0",
     "pytest-playwright>=0.7.0",
 ]
+
+[project.scripts]
+crypto-trending-mcp = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
